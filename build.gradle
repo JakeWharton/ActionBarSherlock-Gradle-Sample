@@ -1,0 +1,24 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.5.+'
+  }
+}
+
+apply plugin: 'android'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+  compile 'com.android.support:support-v4:18.0.+'
+}
+
+android {
+  compileSdkVersion 14
+  buildToolsVersion '17.0.0'
+}
